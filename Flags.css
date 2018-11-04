@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+/*Set the background color*/
+html {
+    background-color: #C7C1C1;
+}
+
+/*Set all the dafult properties that will apply to most tags in the body*/
+body {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    max-width: 960px;
+    min-width: 450px;
+    font-family: "Palatino Linotype", "Andale Mono", "Athelas", sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+body p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h1 {
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*Change some properties of the header*/
+h1, h2, h3 {
+    padding-left: 10px;
+    color: #8F8888;
+    font-family: "Lucida Sans Unicode" , "Lucidia Grande", Arial, sans-serif;
+}
+
+/*Add the square before the h2 and h3 tags*/
+h2:before,
+h3:before {
+  content: '■ ';
+    position: relative;
+    bottom: .1em;
+    color: #666;
+}
+
+/*Make some changes to the horizontal rule*/
+hr {
+    border: none;
+    height: 10px;
+    background-color: #5B2B2C;
+    width: 100%;
+}
+
+/*Some more default properties for all the content*/
+#content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*Add the flag image*/
+#flagImage {
+    float: right;
+    margin-top: 20px;
+    height: 70px;
+    width: 200px;
+    background-image: url("https://internal.cs.ncl.ac.uk/modules/2013-14/csc1026/flags/css/70-flags.png");
+}
+
+
+#flick {
+    background-image: url("https://internal.cs.ncl.ac.uk/modules/2013-14/csc1026/flags/css/420x370-box.png");
+    float: right;
+    margin: 10px;
+    margin-top: -20px;
+    min-width: 420px;
+    min-height: 370px;
+}
+
+/*Some default properties of all elements in the nav div*/
+#nav {
+	text-align: right;
+	position: absolute;
+	top: -15px;
+	left: 0px;
+	width: 100%;
+	background-color: #5d2c2c;
+	height: 30px;
+}
+
+/*All unordered lists in nav*/
+#nav ul {
+    display: block;
+    list-style-type: none;
+}
+
+/*Change all list elements that are children of the unordered list*/
+#nav ul > li {
+	display: inline;
+	vertical-align: middle;
+    position: relative;
+    bottom: 12px;
+    right: 10px
+}
+
+/*Hide all unordered lists inside an unordered list*/
+#nav ul ul{
+	display: none;
+}
+
+/*Change links inside a list element*/
+#nav li a {
+	text-decoration: none;
+	color: #c4bab8;
+	background: #5d2c2c;
+}
+
+/*Display unordered lists that are children of a list tag while it is being hovered over*/
+#nav li:hover > ul {
+	display:block;
+	background-color: #5d2c2c;
+	list-style: none;
+	margin-top: 10px;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	width: 215px;
+	height: 20px;
+    left: 690px;
+    bottom: 5px;
+    position: relative;
+    clear: both;
+}
+
+/*Change he list tags that are children of unordered lists that in turn are children of list tags that are children of unordered*/
+#nav ul > li > ul > li{
+    float: left;
+    margin-left: 10px;
+}
+
+#flick img {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/*Add a flag image*/
+#NFImage {
+    float: right;
+    height: 200px;
+    width: 400px;
+    background-image: url(https://internal.cs.ncl.ac.uk/modules/2013-14/csc1026/flags/css/3-flags75.png);
+    margin: 0px;
+    margin-top: 50px
+}
+
+#video iframe{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#video {
+    float: right;
+    margin: 10px;
+    margin-top: -20px;
+    height: 320px;
+    width: 460px;
+    min-width: 460px;
+    min-height: 320px;
+    background-image: url(https://internal.cs.ncl.ac.uk/modules/2013-14/csc1026/flags/css/460x320-box.png);
+    text-align: center
+}
+
+#gallery {
+    margin-left: 10px;
+}
+
+#gallery p {
+    font-weight: bold;
+    display: inline-block
+}
+
+#gallery img {
+    border: 1px solid #000000;
+}
+
+#numbersGallery {
+    margin-left: 10px;
+}
+
+#numbersGallery  p{
+    font-weight: bold;
+    display: inline-block;
+}
+
+/*CSS implementation of a horizontal rule*/
+.horizontalLine {
+    height: 10px;
+    background-color: #5B2B2C;
+}
+
+#wiki {
+    height: 40px;
+}
+
+#wiki p{
+    padding-right: 20px;
+    float:right;
+}
